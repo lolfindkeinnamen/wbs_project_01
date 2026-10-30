@@ -3,13 +3,13 @@ We will complete [our own Figma wireframe, the "Find Your Dream Home" template, 
 
 Lennart - lennart.dmoch@gmail.com
 Frank - 
-Daniel - 
+Daniel - danielciekalski@gmail.com
 Dustin - 
 
 Tasks:
 
 header - 
 nav - 
-body part 1 - 
+body part 1 - Daniel
 body part 2 - 
 footer - 
