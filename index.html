@@ -1,25 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Rename this. It is the first thing FR008 touches, and it is what shows
+<head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+     <!-- Rename this. It is the first thing FR008 touches, and it is what shows
          up in the browser tab and in the Google result. -->
-    <title>Find Your Dream Home</title>
+     <title>Find Your Dream Home</title>
 
-    <!-- Tailwind, straight from the CDN. No build step, no install, nothing to
+     <!-- Tailwind, straight from the CDN. No build step, no install, nothing to
          run before the page works — open the file and it is styled. This line is
          FR005, already done. -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Your own stylesheet, for the few things utilities cannot say. It is also
+     <!-- Your own stylesheet, for the few things utilities cannot say. It is also
          what switches on the Tailwind IntelliSense extension — see styles.css. -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+     <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <body>
-    <!--
+<body class="font-[Montserrat]">
+     <!--
       This file is yours to type.
 
       The eight markers below are the tasks from README.md, in page order. They
@@ -39,19 +40,63 @@
       Nothing reads them.
     -->
 
-    <!-- T1 — Header and navigation.
+     <!-- T1 — Header and navigation.
          How someone gets from the top of the page to everything below it. There
          is an element that means "this is the site's navigation"; find it rather
          than saying so in a class name. On a phone this has to survive without
          JavaScript. -->
+    <header
+      class="flex flex-col gap-4 p-4 md:flex-row md:items-center md:justify-between max-w-6xl mx-auto"
+    >
+      <a href="index.html"><img src="assets/logo.svg" alt="Dwello" class="w-28 h-auto"></a>
+      <nav class="flex flex-col gap-4 md:flex-row">
+        <a href="index.html" class="hover:underline focus-visible:underline">Home</a>
+        <a href="#services" class="hover:underline focus-visible:underline">Service</a>
+        <a href="#contact" class="hover:underline focus-visible:underline">Contact</a>
+      </nav>
+    </header>
 
-    <!-- T2 — Hero and property search bar.
+     <!-- T2 — Hero and property search bar.
          The first screenful: the headline, the line of promise under it, the
          image, and the search controls. A page has one h1, and this is where it
          goes. The search controls are real form elements even though nothing is
          submitted anywhere yet — a label belongs to every one of them. -->
+         <section class="flex flex-col gap-4 p-4 md:flex-row md:items-center max-w-6xl mx-auto bg-[#fef7f2] text-[#2b1b12] md:px-12">
+         <div class="flex flex-col gap-4">
+         <h1 class="text-4xl font-bold md:text-6xl">Find Your Dream Home.</h1>
+         <p class="text-lg">Discover a place you'll love to call home.</p>
+         <a href="#contact" class="self-start rounded bg-[#2b1b12] px-6 py-3 text-white hover:underline focus-visible:underline">Sign up</a>
+         </div>
+         <img src="assets/hero-house.png" alt="Modern house with large windows and terraces" class="w-full max-w-xl h-auto">
+         </section>
+         <form class="flex flex-col gap-4 p-4 max-w-4xl mx-auto bg-[#ddc7bb] rounded-xl shadow-lg md:flex-row md:items-end">
+          <div class="flex flex-col gap-2 flex-1 min-w-0">
+          <label for="location">Location</label>
+<input type="text" id="location" name="location" class="rounded border border-[#2b1b12] bg-white p-3 h-12">
+</div>
+<div class="flex flex-col gap-2 flex-1 min-w-0">
+  <label for="property-type">Type</label>
+ <select id="property-type" name="property-type" class="rounded border border-[#2b1b12] bg-white p-3 appearance-none h-12">
+    <option value="">Choose a type</option>
+    <option value="house">House</option>
+    <option value="apartment">Apartment</option>
+  </select>
+</div>
+<div class="flex flex-col gap-2 flex-1 min-w-0">
+  <label for="price-range">Price Range</label>
+  <select id="price-range" name="price-range" class="rounded border border-[#2b1b12] bg-white p-3 appearance-none h-12">
+    <option value="">Choose a price range</option>
+    <option value="under-500000">Under $500,000</option>
+    <option value="500000-1000000">$500,000–$1,000,000</option>
+    <option value="over-1000000">Over $1,000,000</option>
+  </select>
+</div>
+<button type="button" class="rounded bg-[#2b1b12] px-6 py-3 text-white hover:underline focus-visible:underline">
+  Search
+</button>
+</form>
 
-    <!-- T3 — "We help you find" section, with the stats row.
+     <!-- T3 — "We help you find" section, with the stats row.
          An image beside a block of text, and three numbers with captions. Ask
          what the numbers *are* before you decide which element holds them. This
          is the first section where the phone and the desktop layouts genuinely
@@ -141,20 +186,187 @@
          times — and whatever you get wrong, likewise. Every image needs alt
          text that says something. -->
 
-    <!-- T6 — Testimonials.
+     <!-- T6 — Testimonials.
          Three quotes, each with a name and a face. There is an element for a
          quotation and an element for saying who said it; using them is the
          point of FR004. The carousel dots in the design can stay as plain
-         markup — nothing has to move. -->
+         markup — nothing has to move. yeah -->
+         
+     <section id="residences" class="pb-12 pt-10 bg-[#faf5f2]" aria-labelledby="residences-heading">
+          <h2 id="residences-heading" class="mb-1 text-center text-3xl font-bold">What People Say</h2>
+          <h2 id="residences-heading" class="mb-10 text-center text-3xl font-bold">About Dwello</h2>
 
-    <!-- T7 — Get-help call to action, with its form.
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+               <article id="residences" class="pb-1 bg-[#DEC5B8] overflow-hidden rounded-lg  shadow hover:animate-pulse bg-[#DEC5B8]" aria-labelledby="residences-heading">
+                    <img src="ressources_body_2/LukeCheeser.jpg" alt="Placeholder" class="w-full h-80 object-cover" />
+                    <div class="p-6">
+                         <div class="flex items-center justify-between mb-5">
+                              <div class="flex items-center gap-3">
+                              <img src="ressources_body_2/person1.jpg" alt="Avatar" class="w-14 h-14 rounded-full object-cover" />
+                              <div>
+                                   <h3 class="text-xl font-semibold text-[#2B1A12]">Luke Cheeser</h3>
+                                   <p class="text-[#2B1A12]">Berlin</p>
+                              </div>
+                         </div>
+                         <span class="flex items-center gap-1 bg-white rounded px-2 py-0.5 text-[#2B1A12] font-medium">
+                              <span class="text-yellow-400 text-xl">★</span> 4.5
+                         </span>
+                         </div>
+                         <p class="text-[#2B1A12] leading-relaxed">
+                              Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!
+                         </p>
+                    </div>
+               </article>
+
+               <article id="residences" class="pb-1 bg-[#DEC5B8] overflow-hidden rounded-lg  shadow hover:animate-pulse bg-[#DEC5B8]" aria-labelledby="residences-heading">
+                    <img src="ressources_body_2/MargaretBarley.jpg" alt="Placeholder" class="w-full h-80 object-cover" />
+                    <div class="p-6">
+                         <div class="flex items-center justify-between mb-5">
+                              <div class="flex items-center gap-3">
+                              <img src="ressources_body_2/person2.jpg" alt="Avatar" class="w-14 h-14 rounded-full object-cover" />
+                              <div>
+                                   <h3 class="text-xl font-semibold text-[#2B1A12]">Margaret Barley</h3>
+                                   <p class="text-[#2B1A12]">London</p>
+                              </div>
+                         </div>
+                         <span class="flex items-center gap-1 bg-white rounded px-2 py-0.5 text-[#2B1A12] font-medium">
+                              <span class="text-yellow-400 text-xl">★</span> 5.0
+                         </span>
+                         </div>
+                         <p class="text-[#2B1A12] leading-relaxed">
+                              I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!
+                         </p>
+                    </div>
+               </article>
+               
+               <article id="residences" class="pb-1 bg-[#DEC5B8] overflow-hidden rounded-lg  shadow hover:animate-pulse bg-[#DEC5B8]" aria-labelledby="residences-heading">
+                    <img src="ressources_body_2/harmless white couch.jpg" alt="Placeholder" class="w-full h-80 object-cover" />
+                    <div class="p-6">
+                         <div class="flex items-center justify-between mb-5">
+                              <div class="flex items-center gap-3">
+                              <img src="ressources_body_2/Gernhard_Reinholzen.webp" alt="Avatar" class="w-14 h-14 rounded-full object-cover" />
+                              <div>
+                                   <h3 class="text-xl font-semibold text-[#2B1A12]">Gernhard Reinholzen</h3>
+                                   <p class="text-[#2B1A12]">Germany</p>
+                              </div>
+                         </div>
+                         <span class="flex items-center gap-1 bg-white rounded px-2 py-0.5 text-[#2B1A12] font-medium">
+                              <span class="text-yellow-400 text-xl">★</span> 6.9
+                         </span>
+                         </div>
+                         <p class="text-[#2B1A12] leading-relaxed">
+                              Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are unmatched.
+                         </p>
+                    </div>
+               </article>
+
+          </div>
+
+          <div class="flex gap-9 bg-[#fdf5ee] p-8 justify-center">
+               <a
+                    aria-label="Previous"
+                    class="grid h-[58px] w-[58px] place-items-center rounded-full bg-[#2e1a12] transition hover:scale-105 hover:bg-[#4a2c1f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#2e1a12]"
+                    href="halloween.html"
+               > 
+                    <svg viewBox="0 0 24 24" class="h-[22px] w-[22px] fill-none stroke-white stroke-2 [stroke-linecap:round] [stroke-linejoin:round]">
+                         <polyline points="15 6 9 12 15 18" />
+                    </svg>
+               </a>
+            
+               <a 
+                    aria-label="Next"
+                    class="grid h-[58px] w-[58px] place-items-center rounded-full bg-[#2e1a12] transition hover:scale-105 hover:bg-[#4a2c1f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#2e1a12]"
+                    href="halloween.html"
+               > 
+                    <svg viewBox="0 0 24 24" class="h-[22px] w-[22px] fill-none stroke-white stroke-2 [stroke-linecap:round] [stroke-linejoin:round]">
+                         <polyline points="9 6 15 12 9 18" />
+                    </svg>
+               </a>
+          </div>
+
+     </section>
+
+
+
+     <!-- T7 — Get-help call to action, with its form.
          A heading, a line of copy, an input and a button. It is a form: it needs
          a form element, a label the input is actually tied to, and an input type
          that suits what is being typed. It does not need to send anywhere. -->
 
-    <!-- T8 — Footer.
+     <section class="text-center px-4 py-20 mb-8">
+          <div>
+               <h2 class="text-[25px] font-bold text-[#2B1B12] mb-4 md:text-[40px] md:max-w-2xl mx-auto">Do You Have Any Questions? Get Help From Us</h2>
+               <ul class="text-base mb-8 flex justify-center gap-3 flex-wrap md:gap-10 lg:gap-15">
+                    <li class="flex items-center gap-2"><img src="assets/icons/circle-check.svg" alt=""><a href="#">Chat live with our support team</a></li>
+                    <li class="flex items-center gap-2"><img src="assets/icons/circle-check.svg" alt=""><a href="#">Browse our FAQ</a></li>
+               </ul>
+          </div>
+          <form class="flex gap-4 max-w-lg mx-auto">
+               <label for="email" class="sr-only">Email address</label>
+               <input type="email" id="email" placeholder="Enter your email address..." class="grow bg-[#DDC7BB] text-sm rounded-sm shadow-sm font-bold px-2 py-2 bg-[url(assets/icons/mail.svg)] bg-no-repeat bg-position-[10px_center] pl-10 min-w-0">
+               <button class="text-white bg-[#2B1B12] rounded-sm shadow-sm px-5 py-2">Submit</button>
+          </form>
+
+     </section>
+
+     <!-- T8 — Footer.
          The logo, the columns of links, whatever legal text you decide belongs.
          Footers are where heading levels and list markup quietly go wrong,
          because it looks like decoration and is not. -->
-  </body>
+     <footer
+          class="bg-[#DDC7BB] text-[#4F3527] grid-cols-2 px-4 pt-8 pb-25 grid gap-6 md:grid-cols-4 md:pl-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] lg:px-8 lg:pt-16">
+          <div class="col-span-2 md:col-span-4 lg:col-span-1">
+               <img src="assets/logo.svg" alt="Dwello">
+               <p class="text-sm font-bold max-w-3xs mt-2">Bringing you closer to your dream home, one click at a time.
+               </p>
+          </div>
+
+          <div>
+               <h2 class="text-lg font-bold mb-2">About</h2>
+               <ul class="grid text-base font-semibold gap-2">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Resources</a></li>
+               </ul>
+          </div>
+
+
+          <div>
+               <h2 class="text-lg font-bold mb-2">Support</h2>
+               <ul class="grid text-base font-semibold gap-2">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+               </ul>
+          </div>
+
+
+          <div>
+               <h2 class="text-lg font-bold mb-2">Find Us</h2>
+               <ul class="grid text-base font-semibold gap-2">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Newsletter</a></li>
+               </ul>
+          </div>
+
+
+          <div>
+               <h2 class="text-lg font-bold mb-2">Our Social</h2>
+               <ul class="grid text-base font-semibold gap-2">
+                    <li><a href="#" class="flex items-center gap-2"><img src="assets/icons/instagram.svg"
+                                   alt="">Instagram</a></li>
+                    <li><a href="#" class="flex items-center gap-2"><img src="assets/icons/facebook.svg"
+                                   alt="">Facebook</a></li>
+                    <li><a href="#" class="flex items-center gap-2"><img src="assets/icons/x.svg" alt="">Twitter (x)</a>
+                    </li>
+               </ul>
+          </div>
+
+     </footer>
+</body>
+
 </html>
