@@ -9,6 +9,15 @@
       "commits": [
         "a9097f734cc1cecfd13b3e09cfa148fe415ce1f6"
       ]
+    },
+    {
+      "task": "T4",
+      "at": "2026-11-02T15:17:38.978Z",
+      "route": "written",
+      "branch": "t4-signoff",
+      "commits": [
+        "49ed1702815897563d9f7f031a4c863aad33667c"
+      ]
     }
   ]
 }
