@@ -1,0 +1,14 @@
+{
+  "student": "danielciekalski",
+  "unlocks": [
+    {
+      "task": "T3",
+      "at": "2026-11-02T14:28:25.784Z",
+      "route": "written",
+      "branch": "body-part-1",
+      "commits": [
+        "a9097f734cc1cecfd13b3e09cfa148fe415ce1f6"
+      ]
+    }
+  ]
+}
