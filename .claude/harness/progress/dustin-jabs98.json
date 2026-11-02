@@ -1,0 +1,47 @@
+{
+  "student": "dustin-jabs98",
+  "unlocks": [
+    {
+      "task": "T7",
+      "at": "2026-11-02T11:32:08.290Z",
+      "route": "written",
+      "branch": "footer",
+      "commits": [
+        "1b2cc3277809218aa87a6e2b883b09c64151a22b",
+        "f6b76c72817c4757e15abdcb803015c0f402ff3b",
+        "2f67b4ba5e3c8269bc2dbb4b8c53587fe9215c61",
+        "d317f37a23f9423e5c84361ee7f9b14d598ebd0b",
+        "7d83dab04ee15b2bff9e2507c1d0d0bd88b757fb",
+        "7a42c4978587c7a7f2c8e57cf3e18f160d7e7eda",
+        "de8ea2671f58490c14b0eee986a72163359b521b",
+        "ce98cdca81425e6eb1a9a6d7e9120e40fdcb3aed",
+        "f6bf688f0a673931de13d4e99b63273b793b2462",
+        "5d3ced32bd7f6a2e8552fc978684b9b864f5229d",
+        "13f3171e82b924886d5fa94b6645e86387d0b509",
+        "4e19b1255e896450e16c4622f347425247d44596",
+        "ea4362722adbcaba18510b938a09499a17d01165"
+      ]
+    },
+    {
+      "task": "T8",
+      "at": "2026-11-02T11:32:08.659Z",
+      "route": "written",
+      "branch": "footer",
+      "commits": [
+        "1b2cc3277809218aa87a6e2b883b09c64151a22b",
+        "f6b76c72817c4757e15abdcb803015c0f402ff3b",
+        "2f67b4ba5e3c8269bc2dbb4b8c53587fe9215c61",
+        "d317f37a23f9423e5c84361ee7f9b14d598ebd0b",
+        "7d83dab04ee15b2bff9e2507c1d0d0bd88b757fb",
+        "7a42c4978587c7a7f2c8e57cf3e18f160d7e7eda",
+        "de8ea2671f58490c14b0eee986a72163359b521b",
+        "ce98cdca81425e6eb1a9a6d7e9120e40fdcb3aed",
+        "f6bf688f0a673931de13d4e99b63273b793b2462",
+        "5d3ced32bd7f6a2e8552fc978684b9b864f5229d",
+        "13f3171e82b924886d5fa94b6645e86387d0b509",
+        "4e19b1255e896450e16c4622f347425247d44596",
+        "ea4362722adbcaba18510b938a09499a17d01165"
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ We will complete [the "Find Your Dream Home" template] and leave out [anything e
 Lennart - lennart.dmoch@gmail.com
 Frank - 
 Daniel - 
-Dustin - 
+Dustin - dustin.jabs98@icloud.com
 
 Tasks:
 
