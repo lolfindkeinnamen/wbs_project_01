@@ -2,7 +2,7 @@ We are building [a single-page website in index.html, styled with Tailwind] for 
 We will complete [the "Find Your Dream Home" template] and leave out [anything else].
 
 Lennart - lennart.dmoch@gmail.com
-Frank - 
+Frank - fraendk@hotmail.com
 Daniel - 
 Dustin - dustin.jabs98@icloud.com
 
