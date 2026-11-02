@@ -44,12 +44,56 @@
          is an element that means "this is the site's navigation"; find it rather
          than saying so in a class name. On a phone this has to survive without
          JavaScript. -->
+    <header
+      class="flex flex-col gap-4 p-4 md:flex-row md:items-center md:justify-between max-w-6xl mx-auto"
+    >
+      <a href="index.html"><img src="assets/logo.svg" alt="Dwello" class="w-28 h-auto"></a>
+      <nav class="flex flex-col gap-4 md:flex-row">
+        <a href="index.html" class="hover:underline focus-visible:underline">Home</a>
+        <a href="#services" class="hover:underline focus-visible:underline">Service</a>
+        <a href="#contact" class="hover:underline focus-visible:underline">Contact</a>
+      </nav>
+    </header>
 
     <!-- T2 — Hero and property search bar.
          The first screenful: the headline, the line of promise under it, the
          image, and the search controls. A page has one h1, and this is where it
          goes. The search controls are real form elements even though nothing is
          submitted anywhere yet — a label belongs to every one of them. -->
+         <section class="flex flex-col gap-4 p-4 md:flex-row md:items-center max-w-6xl mx-auto bg-[#fef7f2] text-[#2b1b12] md:px-12">
+         <div class="flex flex-col gap-4">
+         <h1 class="text-4xl font-bold md:text-6xl">Find Your Dream Home.</h1>
+         <p class="text-lg">Discover a place you'll love to call home.</p>
+         <a href="#contact" class="self-start rounded bg-[#2b1b12] px-6 py-3 text-white hover:underline focus-visible:underline">Sign up</a>
+         </div>
+         <img src="assets/hero-house.png" alt="Modern house with large windows and terraces" class="w-full max-w-xl h-auto">
+         </section>
+         <form class="flex flex-col gap-4 p-4 max-w-4xl mx-auto bg-[#ddc7bb] rounded-xl shadow-lg md:flex-row md:items-end">
+          <div class="flex flex-col gap-2 flex-1 min-w-0">
+          <label for="location">Location</label>
+<input type="text" id="location" name="location" class="rounded border border-[#2b1b12] bg-white p-3 h-12">
+</div>
+<div class="flex flex-col gap-2 flex-1 min-w-0">
+  <label for="property-type">Type</label>
+ <select id="property-type" name="property-type" class="rounded border border-[#2b1b12] bg-white p-3 appearance-none h-12">
+    <option value="">Choose a type</option>
+    <option value="house">House</option>
+    <option value="apartment">Apartment</option>
+  </select>
+</div>
+<div class="flex flex-col gap-2 flex-1 min-w-0">
+  <label for="price-range">Price Range</label>
+  <select id="price-range" name="price-range" class="rounded border border-[#2b1b12] bg-white p-3 appearance-none h-12">
+    <option value="">Choose a price range</option>
+    <option value="under-500000">Under $500,000</option>
+    <option value="500000-1000000">$500,000–$1,000,000</option>
+    <option value="over-1000000">Over $1,000,000</option>
+  </select>
+</div>
+<button type="button" class="rounded bg-[#2b1b12] px-6 py-3 text-white hover:underline focus-visible:underline">
+  Search
+</button>
+</form>
 
     <!-- T3 — "We help you find" section, with the stats row.
          An image beside a block of text, and three numbers with captions. Ask
