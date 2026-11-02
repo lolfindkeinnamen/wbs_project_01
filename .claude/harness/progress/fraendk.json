@@ -1,0 +1,23 @@
+{
+  "student": "fraendk",
+  "unlocks": [
+    {
+      "task": "T1",
+      "at": "2026-11-02T11:00:59.681Z",
+      "route": "written",
+      "branch": "header",
+      "commits": [
+        "90faf4dcf17435d058044edaaf540103ce6ec839"
+      ]
+    },
+    {
+      "task": "T2",
+      "at": "2026-11-02T11:00:59.962Z",
+      "route": "written",
+      "branch": "header",
+      "commits": [
+        "90faf4dcf17435d058044edaaf540103ce6ec839"
+      ]
+    }
+  ]
+}
