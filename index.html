@@ -81,14 +81,32 @@
          a form element, a label the input is actually tied to, and an input type
          that suits what is being typed. It does not need to send anywhere. -->
 
+     <section class="text-center px-4 py-8 mb-8">
+          <div>
+               <h2 class="text-lg font-bold text-[#2B1B12] mb-4 lg:text-[40px] lg:max-w-xl mx-auto">Do You Have Any Questions? Get Help From Us</h2>
+               <ul class="text-base mb-8 flex justify-center gap-3 flex-wrap lg:gap-15">
+                    <li class="flex items-center gap-2"><img src="assets/icons/circle-check.svg" alt=""><a href="#">Chat live with our support team</a></li>
+                    <li class="flex items-center gap-2"><img src="assets/icons/circle-check.svg" alt=""><a href="#">Browse our FAQ</a></li>
+               </ul>
+          </div>
+          <form class="flex gap-4 max-w-lg mx-auto">
+               <label for="email" class="sr-only">Email address</label>
+               <input type="email" id="email" placeholder="Enter your email address..." class="grow bg-[#DDC7BB] text-base rounded-sm shadow-sm font-bold px-2 py-2 bg-[url(assets/icons/mail.svg)] bg-no-repeat bg-position-[10px_center] pl-10">
+               <button class="text-white bg-[#2B1B12] rounded-sm shadow-sm px-5 py-2">Submit</button>
+          </form>
+
+     </section>
+
      <!-- T8 — Footer.
          The logo, the columns of links, whatever legal text you decide belongs.
          Footers are where heading levels and list markup quietly go wrong,
          because it looks like decoration and is not. -->
-     <footer class="bg-[#DDC7BB] text-[#4F3527] px-4 py-8 grid gap-6 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] lg:px-8 lg:py-16">
+     <footer
+          class="bg-[#DDC7BB] text-[#4F3527] px-4 py-8 grid gap-6 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] lg:px-8 lg:py-16">
           <div>
                <img src="assets/logo.svg" alt="Dwello">
-               <p class="text-sm font-bold max-w-3xs mt-2">Bringing you closer to your dream home, one click at a time.</p>
+               <p class="text-sm font-bold max-w-3xs mt-2">Bringing you closer to your dream home, one click at a time.
+               </p>
           </div>
 
           <div>
@@ -126,9 +144,12 @@
           <div>
                <h2 class="text-lg font-bold mb-2">Our Social</h2>
                <ul class="grid text-base font-semibold gap-2">
-                    <li><a href="#" class="flex items-center gap-2"><img src="assets/icons/instagram.svg" alt="">Instagram</a></li>
-                    <li><a href="#" class="flex items-center gap-2"><img src="assets/icons/facebook.svg" alt="">Facebook</a></li>
-                    <li><a href="#" class="flex items-center gap-2"><img src="assets/icons/x.svg" alt="">Twitter (x)</a></li>
+                    <li><a href="#" class="flex items-center gap-2"><img src="assets/icons/instagram.svg"
+                                   alt="">Instagram</a></li>
+                    <li><a href="#" class="flex items-center gap-2"><img src="assets/icons/facebook.svg"
+                                   alt="">Facebook</a></li>
+                    <li><a href="#" class="flex items-center gap-2"><img src="assets/icons/x.svg" alt="">Twitter (x)</a>
+                    </li>
                </ul>
           </div>
 
